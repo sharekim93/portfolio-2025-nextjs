@@ -149,8 +149,6 @@ const CanvasArea = () => {
         zIndex: "-1",
         top: 0,
         left: 0,
-        width: 0,
-        height: 0,
         backgroundColor: "#FAF9F6",
         willChange: "transform", // 성능 최적화
         transform: "translateZ(0)", // 하드웨어 가속 활성화
