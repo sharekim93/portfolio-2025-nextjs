@@ -25,13 +25,13 @@ const FloatingActionButtonComponent = dynamic(
 export default function Home() {
   return (
     <>
+      <CanvasArea />
       <div className="container w-screen h-full px-8 md:px-20">
         <IntroComponent />
         <SkillsComponent />
         <ExperienceComponent />
         <ProjectsComponent />
         <FloatingActionButtonComponent />
-        <CanvasArea />
       </div>
     </>
   );
