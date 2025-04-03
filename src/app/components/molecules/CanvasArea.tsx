@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, memo } from "react";
 import CherryBlossom from "@/utils/canvas/CherryBlossom";
 import PinkPetal from "@/utils/canvas/PinkPetal";
-import { isIOS, isSafari } from "react-device-detect";
+import { isSafari } from "react-device-detect";
 
 const CanvasArea = () => {
   const requestRef = useRef<number>(0);
