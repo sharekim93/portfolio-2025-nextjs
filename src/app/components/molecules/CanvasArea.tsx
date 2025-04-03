@@ -99,7 +99,14 @@ const CanvasArea = () => {
       ) {
         blossom.draw(ctx);
       }
+      // 화면 밖으로 나간 파티클 재활용
+      if (y - size > canvasHeight) {
+        blossom.setY(-size * 2);
+        blossom.setX(randomNumBetween(0, canvasWidth));
+        blossom.setVy(randomNumBetween(0.5, 2));
+      }
     });
+
     requestRef.current = requestAnimationFrame(animate);
   }, []);
 
