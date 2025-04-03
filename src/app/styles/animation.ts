@@ -1,6 +1,6 @@
 export const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5, delayChildren: 1 } },
+  visible: { opacity: 1, transition: { duration: 1, delayChildren: 1 } },
 };
 
 export const slideUp = {
