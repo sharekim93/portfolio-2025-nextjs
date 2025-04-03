@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, memo } from "react";
 import CherryBlossom from "@/utils/canvas/CherryBlossom";
 import PinkPetal from "@/utils/canvas/PinkPetal";
 
@@ -137,17 +137,9 @@ const CanvasArea = () => {
   return (
     <canvas
       ref={canvasRef}
-      style={{
-        position: "fixed",
-        zIndex: "-1",
-        top: 0,
-        left: 0,
-        backgroundColor: "#FAF9F6",
-        willChange: "transform", // 성능 최적화
-        transform: "translateZ(0)", // 하드웨어 가속 활성화
-      }}
+      className="fixed top-0 left-0 w-full h-full pointer-events-none z-[-1]"
     />
   );
 };
 
-export default CanvasArea;
+export default memo(CanvasArea);
