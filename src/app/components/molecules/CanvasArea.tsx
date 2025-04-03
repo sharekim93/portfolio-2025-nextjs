@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, memo } from "react";
 import CherryBlossom from "@/utils/canvas/CherryBlossom";
 import PinkPetal from "@/utils/canvas/PinkPetal";
+import { isIOS, isSafari } from "react-device-detect";
 
 const CanvasArea = () => {
   const requestRef = useRef<number>(0);
@@ -20,12 +21,6 @@ const CanvasArea = () => {
       canvasRef.current.width = window.innerWidth * ratio;
       canvasRef.current.height = window.innerHeight * ratio;
     }
-
-    // 변경된 사이즈에 맞게 blossom 의 위치를 재배치한다 (자연스러움을 위해)
-    blossomsRef.current.forEach((blossom) => {
-      const ratio = window.devicePixelRatio || 1;
-      blossom.setX(randomNumBetween(0, window.innerWidth * ratio));
-    });
   }, []);
 
   const init = useCallback(() => {
@@ -112,7 +107,9 @@ const CanvasArea = () => {
     init();
     generateBlossoms();
 
-    window.addEventListener("resize", handleResize);
+    if (!isSafari) {
+      window.addEventListener("resize", handleResize);
+    }
 
     // 스크롤 이벤트 처리 개선
     const handleScroll = () => {
@@ -128,7 +125,9 @@ const CanvasArea = () => {
     requestRef.current = requestAnimationFrame(animate);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      if (!isSafari) {
+        window.removeEventListener("resize", handleResize);
+      }
       window.removeEventListener("scroll", handleScroll);
       cancelAnimationFrame(requestRef.current);
     };
