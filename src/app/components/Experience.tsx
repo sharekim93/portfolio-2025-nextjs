@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { fadeIn } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
 export default function Experience() {

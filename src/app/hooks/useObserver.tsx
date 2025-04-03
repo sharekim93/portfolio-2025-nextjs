@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useAnimation } from "framer-motion";
+import { useAnimation } from "motion/react";
 import { useInView } from "react-intersection-observer";
 
 const useObserver = () => {

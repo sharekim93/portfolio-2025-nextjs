@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { fadeIn } from "@/styles/animation";
 import arrowDown from "@/images/arrow-down.svg";
 import { useEffect, useState, useRef } from "react";

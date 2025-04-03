@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Plus, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import tistory from "@/images/tistory.svg";
 import githubMark from "@/images/github-mark.svg";
 import { BlogURL, GithubURL } from "@/constants";
