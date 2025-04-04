@@ -3,7 +3,6 @@
 import { motion } from "motion/react";
 import { fadeIn } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
-import ScrollDown from "./ScrollDown";
 
 export default function Intro() {
   const { ref, animation } = useObserver();
@@ -34,7 +33,6 @@ export default function Intro() {
             그 중, 비즈니스 문제 해결을 가장 중요하게 생각합니다.
           </p>
         </div>
-        <ScrollDown />
       </motion.section>
     </>
   );
