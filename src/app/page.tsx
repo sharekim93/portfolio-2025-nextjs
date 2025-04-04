@@ -1,5 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
+import { useMenuStore } from "./store/menuStore";
+
+const GnbMenu = dynamic(() => import("@/components/Gnb"));
 
 const CanvasArea = dynamic(() => import("@/components/molecules/CanvasArea"), {
   ssr: false,
@@ -23,16 +26,24 @@ const FloatingActionButtonComponent = dynamic(
 );
 
 export default function Home() {
+  const tabIndex = useMenuStore((state) => state.tabIndex);
   return (
     <>
+      <GnbMenu />
       <CanvasArea />
-      <div className="w-screen h-full px-8 md:px-20">
-        <IntroComponent />
-        <SkillsComponent />
-        <ExperienceComponent />
-        <ProjectsComponent />
-        <FloatingActionButtonComponent />
-      </div>
+      {tabIndex === 0 ? (
+        <div className="w-screen h-full px-8 md:px-20">
+          <IntroComponent />
+          <SkillsComponent />
+          <ExperienceComponent />
+          <ProjectsComponent />
+        </div>
+      ) : (
+        <div className="w-screen h-screen px-8 md:px-20 flex flex-col justify-center items-center">
+          <p className="font-semibold text-black z-1">준비중입니다</p>
+        </div>
+      )}
+      <FloatingActionButtonComponent />
     </>
   );
 }
