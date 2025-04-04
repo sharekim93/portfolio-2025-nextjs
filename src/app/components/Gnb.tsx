@@ -46,7 +46,7 @@ const GnbMenu = () => {
           data-[state=active]:border-b-primary
           data-[state=active]:text-foreground 
           data-[state=active]:shadow-none"
-              onClick={(e) => setTabIndex(e.currentTarget.tabIndex)}
+              onClick={() => setTabIndex(index)}
             >
               {menu}
             </Button>
