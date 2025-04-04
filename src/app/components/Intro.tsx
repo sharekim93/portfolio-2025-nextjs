@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { fadeIn, slideLeft } from "@/styles/animation";
+import { slideLeft } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
 
 export default function Intro() {
