@@ -10,7 +10,7 @@ const ProjectLabelArtist = () => {
 
   return (
     <li className="mb-4 min-h-1/2 flex flex-col gap-1">
-      <div className="flex gap-16 justify-between max-w-xs sm:max-w-xl">
+      <div className="flex gap-16 justify-between max-w-sm sm:max-w-xl">
         <div className="flex flex-col">
           <h3 className="text-lg md:text-2xl font-semibold text-foreground">
             Label Artist Web

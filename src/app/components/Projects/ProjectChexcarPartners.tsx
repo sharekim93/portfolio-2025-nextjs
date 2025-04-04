@@ -11,7 +11,7 @@ const ProjectChexcarPartners = () => {
 
   return (
     <li className="mb-4 flex flex-col gap-1">
-      <div className="flex gap-16 max-w-xs sm:max-w-xl justify-between">
+      <div className="flex gap-16 max-w-sm sm:max-w-xl justify-between">
         <div className="flex flex-col">
           <h3 className="text-lg md:text-2xl font-semibold text-foreground">
             Chexcar Partners App

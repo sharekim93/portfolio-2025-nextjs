@@ -29,7 +29,7 @@ export default function Projects() {
       initial="hidden"
       animate={animation}
       variants={fadeIn}
-      className="container w-full h-full min-h-screen flex flex-col justify-center items-start"
+      className="w-full h-full min-h-screen flex flex-col justify-center items-start"
     >
       <h2 className="text-3xl font-bold mb-4 text-foreground">Projects</h2>
       <ul className="list-image-none list-inside gap-4 mt-4">

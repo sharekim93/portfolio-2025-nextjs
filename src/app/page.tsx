@@ -32,7 +32,7 @@ export default function Home() {
       <GnbMenu />
       <CanvasArea />
       {tabIndex === 0 ? (
-        <div className="w-screen h-full px-8 md:px-20">
+        <div className="w-screen h-full px-4 md:px-20">
           <IntroComponent />
           <SkillsComponent />
           <ExperienceComponent />

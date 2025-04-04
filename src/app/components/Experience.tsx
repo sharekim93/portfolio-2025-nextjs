@@ -13,11 +13,11 @@ export default function Experience() {
       initial="hidden"
       animate={animation}
       variants={fadeIn}
-      className="container w-full h-full min-h-screen flex flex-col justify-center items-start"
+      className=" w-full h-full min-h-screen flex flex-col justify-start items-start"
     >
       <h2 className="text-3xl font-bold mb-4 text-foreground">Experience</h2>
       <h4 className="text-md md:text-lg text-gray-600">경력 : 만 3년</h4>
-      <ul className="list-image-none mt-8 flex flex-col gap-4">
+      <ul className="list-image-none mt-8 flex flex-col gap-4 ">
         <li className="mb-4">
           <h3 className="text-md md:text-xl font-semibold text-foreground whitespace-pre md:whitespace-normal">
             Frontend Developer, CHEXCAR{`\r\n`}(2024.07 ~ 2025.03, 9개월)
