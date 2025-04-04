@@ -1,9 +1,15 @@
+"use client";
+
 import React from "react";
+import { motion } from "motion/react";
 import { Button } from "./ui/button";
 import { useMenuStore } from "@/store/menuStore";
+import useObserver from "@/hooks/useObserver";
+import { fadeIn } from "@/styles/animation";
 
 const GnbMenu = () => {
   const MENU = ["Resume", "Post"];
+  const { ref, animation } = useObserver();
 
   const { tabIndex: activeTabIndex } = useMenuStore();
   const setTabIndex = useMenuStore((state) => state.setTabIndex);
@@ -12,7 +18,13 @@ const GnbMenu = () => {
     tabIndex === activeTabIndex ? "active" : "inactive";
 
   return (
-    <div className="flex items-center justify-center pb-3 fixed top-0 left-0 right-0 bg-[#FAF9F6]">
+    <motion.div
+      initial="hidden"
+      ref={ref}
+      animate={animation}
+      variants={fadeIn}
+      className="flex items-center justify-center pb-3 fixed top-0 left-0 right-0 bg-[#FAF9F6]"
+    >
       <div role="tablist" className="h-10 flex pt-2">
         {MENU.map((menu, index) => {
           return (
@@ -53,7 +65,7 @@ const GnbMenu = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
