@@ -30,7 +30,6 @@ export default function Home() {
   return (
     <>
       <GnbMenu />
-      <CanvasArea />
       {tabIndex === 0 ? (
         <div className="w-screen h-full px-4 md:px-20">
           <IntroComponent />
@@ -44,6 +43,7 @@ export default function Home() {
         </div>
       )}
       <FloatingActionButtonComponent />
+      <CanvasArea />
     </>
   );
 }
