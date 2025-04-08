@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { fadeIn, slideLeft } from "@/styles/animation";
+import { fadeIn } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/Card";
 import { Badge } from "./Badge";
