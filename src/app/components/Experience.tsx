@@ -13,7 +13,7 @@ export default function Experience() {
       initial="hidden"
       animate={animation}
       variants={fadeIn}
-      className=" w-full h-full min-h-screen flex flex-col justify-start items-start"
+      className=" w-full h-full min-h-screen flex flex-col justify-start items-start mt-10"
     >
       <h2 className="text-3xl font-bold mb-4 text-foreground">Experience</h2>
       <h4 className="text-md md:text-lg text-gray-600">경력 : 만 3년</h4>
