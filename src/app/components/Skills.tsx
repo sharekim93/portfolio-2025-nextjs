@@ -17,7 +17,7 @@ export default function Skills() {
       initial="hidden"
       animate={animation}
       variants={fadeIn}
-      className=" w-full h-full min-h-screen flex flex-col justify-start items-start"
+      className=" w-full h-full min-h-screen flex flex-col justify-start items-start mt-10"
     >
       <h2 className="text-3xl font-bold mb-4 text-foreground ">Skills</h2>
       <div className="w-full flex flex-wrap gap-2 sm:flex">
