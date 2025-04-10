@@ -28,10 +28,10 @@ const FloatingActionButtonComponent = dynamic(
 export default function Home() {
   const tabIndex = useMenuStore((state) => state.tabIndex);
   return (
-    <>
+    <div className="w-full h-full ">
       <GnbMenu />
       {tabIndex === 0 ? (
-        <div className="w-screen h-full px-4 md:px-20">
+        <div className="px-4 md:px-20">
           <IntroComponent />
           <SkillsComponent />
           <ExperienceComponent />
@@ -44,6 +44,6 @@ export default function Home() {
       )}
       <FloatingActionButtonComponent />
       <CanvasArea />
-    </>
+    </div>
   );
 }
