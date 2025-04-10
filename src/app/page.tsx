@@ -1,8 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import { useMenuStore } from "./store/menuStore";
-
-const GnbMenu = dynamic(() => import("@/components/Gnb"));
+import GnbMenu from "./components/Gnb";
 
 const CanvasArea = dynamic(() => import("@/components/molecules/CanvasArea"), {
   ssr: false,
