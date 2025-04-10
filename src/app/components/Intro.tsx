@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { slideLeft } from "@/styles/animation";
+import { fadeIn } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
 
 export default function Intro() {
@@ -14,7 +14,7 @@ export default function Intro() {
         ref={ref}
         initial="hidden"
         animate={animation}
-        variants={slideLeft}
+        variants={fadeIn}
         transition={{ duration: 1.5 }}
         className="container w-full h-full min-h-screen flex flex-col justify-start mt-10 pt-20 items-start"
       >
@@ -23,7 +23,7 @@ export default function Intro() {
         </h1>
         <div className="flex flex-col gap-8">
           <motion.div
-            variants={slideLeft}
+            variants={fadeIn}
             className="flex flex-wrap  gap-x-4 my-8 text-md sm:text-lg min-w-xs mt-10"
             transition={{ duration: 1 }}
           >
@@ -37,7 +37,7 @@ export default function Intro() {
             <span className="min-w-1/24">#적응력</span>
           </motion.div>
           <motion.section
-            variants={slideLeft}
+            variants={fadeIn}
             transition={{ duration: 1.5 }}
             className="flex flex-col flex-wrap gap-y-4"
           >
@@ -66,7 +66,7 @@ export default function Intro() {
             </div>
           </motion.section>
           <motion.section
-            variants={slideLeft}
+            variants={fadeIn}
             transition={{ duration: 1.5 }}
             className="flex flex-col flex-wrap gap-y-4"
           >
