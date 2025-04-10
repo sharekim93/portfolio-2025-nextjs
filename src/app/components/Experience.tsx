@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { fadeIn } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
+
 export default function Experience() {
   const { ref, animation } = useObserver();
   return (
@@ -13,16 +14,16 @@ export default function Experience() {
       initial="hidden"
       animate={animation}
       variants={fadeIn}
-      className=" w-full h-full min-h-screen flex flex-col justify-start items-start mt-10"
+      className="max-w-sm h-full min-h-screen md:max-w-screen flex flex-col justify-start items-start mt-10"
     >
       <h2 className="text-3xl font-bold mb-4 text-foreground">Experience</h2>
-      <h4 className="text-md md:text-lg text-gray-600">경력 : 만 3년</h4>
+      <p className="text-md md:text-lg text-gray-600">경력 : 만 3년</p>
       <ul className="list-image-none mt-8 flex flex-col gap-4 ">
         <li className="mb-4">
           <h3 className="text-md md:text-xl font-semibold text-foreground whitespace-pre md:whitespace-normal">
             Frontend Developer, CHEXCAR{`\r\n`}(2024.07 ~ 2025.03, 9개월)
           </h3>
-          <p className="leading-relaxed text-sm md:text-lg text-gray-600 mt-1.5">
+          <p className="text-sm md:text-lg text-gray-600 mt-1.5 ">
             중고차 상품화 프로세스에 맞춰 고객 및 파트너가 사용할 수 있는 웹앱을
             개발하였습니다.
           </p>
