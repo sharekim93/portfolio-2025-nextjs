@@ -6,7 +6,7 @@ import { useMenuStore } from "@/store/menuStore";
 import MenuActions from "./MenuActions";
 
 const GnbMenu = () => {
-  const MENU = ["Resume", "Post"];
+  const MENU = ["Introduce", "Resume"];
 
   const { tabIndex: activeTabIndex } = useMenuStore();
   const setTabIndex = useMenuStore((state) => state.setTabIndex);
@@ -15,7 +15,11 @@ const GnbMenu = () => {
     tabIndex === activeTabIndex ? "active" : "inactive";
 
   return (
-    <div className="flex items-center justify-start pl-3 pb-3 fixed top-0 left-0 right-0 bg-[#FAF9F6] border-b-[0.5px]">
+    <div
+      className={`flex items-center justify-start pl-3 pb-3 fixed top-0 left-0 right-0 bg-[#FAF9F6] border-b-[0.5px] ${
+        activeTabIndex === 1 && "bg-white"
+      }`}
+    >
       <div role="tablist" className="h-10 flex pt-2">
         {MENU.map((menu, index) => {
           return (
@@ -48,7 +52,8 @@ const GnbMenu = () => {
 
           data-[state=active]:border-b-primary
           data-[state=active]:text-foreground 
-          data-[state=active]:shadow-none"
+          data-[state=active]:shadow-none
+          "
               onClick={() => setTabIndex(index)}
             >
               {menu}
