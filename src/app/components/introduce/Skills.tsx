@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { fadeIn } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { Badge } from "@/components/Badge";
+import { Badge } from "@/components/ui/Badge";
 
 export default function Skills() {
   const { ref, animation } = useObserver();

@@ -1,0 +1,17 @@
+import React from "react";
+
+export const Header: React.FC = () => {
+  const data = {
+    name: "Nanum Kim",
+    title: "Software Engineer",
+  };
+
+  return (
+    <header className="mb-8">
+      <h1 className="text-3xl font-bold">
+        {data.name}, {data.title}
+      </h1>
+      <div className="h-px bg-gray-300 my-4"></div>
+    </header>
+  );
+};
