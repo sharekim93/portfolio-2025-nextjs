@@ -16,10 +16,6 @@ const SkillsComponent = dynamic(() => import("@/components/Skills"), {
 const ExperienceComponent = dynamic(() => import("@/components/Experience"), {
   ssr: false,
 });
-const FloatingActionButtonComponent = dynamic(
-  () => import("@/components/molecules/FloatingActionButton"),
-  { ssr: false }
-);
 
 export default function Home() {
   const tabIndex = useMenuStore((state) => state.tabIndex);
