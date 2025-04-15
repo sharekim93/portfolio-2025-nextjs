@@ -13,7 +13,7 @@ const IntroComponent = dynamic(() => import("@/components/Intro"), {
 const SkillsComponent = dynamic(() => import("@/components/Skills"), {
   ssr: false,
 });
-const ExperienceComponent = dynamic(() => import("@/components/Experience"), {
+const CareersComponent = dynamic(() => import("@/components/Careers"), {
   ssr: false,
 });
 
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="px-4 md:px-20">
           <IntroComponent />
           <SkillsComponent />
-          <ExperienceComponent />
+          <CareersComponent />
         </div>
       ) : (
         <div className="w-screen h-screen px-8 md:px-20 flex flex-col justify-center items-center">

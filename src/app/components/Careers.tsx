@@ -4,19 +4,19 @@ import { motion } from "motion/react";
 import { fadeIn } from "@/styles/animation";
 import useObserver from "@/hooks/useObserver";
 
-export default function Experience() {
+export default function Careers() {
   const { ref, animation } = useObserver();
   return (
     <motion.section
-      id="experience"
-      title="Experience"
+      id="careers"
+      title="Careers"
       ref={ref}
       initial="hidden"
       animate={animation}
       variants={fadeIn}
       className="max-w-sm h-full min-h-screen md:max-w-screen flex flex-col justify-start items-start mt-10"
     >
-      <h2 className="text-3xl font-bold mb-4 text-foreground">Experience</h2>
+      <h2 className="text-3xl font-bold mb-4 text-foreground">Careers</h2>
       <p className="text-md md:text-lg text-gray-600">경력 : 만 3년</p>
       <ul className="list-image-none mt-8 flex flex-col gap-4 ">
         <li className="mb-4">
