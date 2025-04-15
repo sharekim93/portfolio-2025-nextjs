@@ -61,20 +61,27 @@ export const Careers: React.FC = () => {
   };
 
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-4">Careers</h2>
-      <div className="h-px bg-gray-300 my-4"></div>
+    <section className="mb-4 sm:mb-8">
+      <h2 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Careers</h2>
+      <div className="h-px bg-gray-300 my-2 sm:my-4"></div>
       {data.careers.map((career, index) => (
         <div key={index} className="mb-6">
-          <h3 className="text-xl font-semibold">
-            {career.company} / {career.position} ({career.period})
+          <h3 className="text-base sm:text-xl font-semibold flex flex-wrap sm:gap-2">
+            <span>
+              {career.company} / {career.position}
+            </span>
+            <span> ({career.period})</span>
           </h3>
           {career.projects.map((project, idx) => (
             <div key={idx} className="mt-4">
-              <h4 className="pl-2 text-lg font-black">{project.title}</h4>
+              <h4 className="pl-2 text-base sm:text-lg font-black">
+                {project.title}
+              </h4>
               <ul className="list-disc pl-6 mt-2">
                 {project.description.map((desc, descIdx) => (
-                  <li key={descIdx}>{desc}</li>
+                  <li className="text-sm sm:text-base" key={descIdx}>
+                    {desc}
+                  </li>
                 ))}
               </ul>
             </div>

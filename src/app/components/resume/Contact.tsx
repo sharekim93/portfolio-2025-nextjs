@@ -10,13 +10,13 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-4">Contacts</h2>
-      <p>
+    <section className="mb-4 sm:mb-8">
+      <h2 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Contacts</h2>
+      <p className="flex flex-wrap text-sm sm:text-base">
         {isMobile ? (
           <a
             href={`tel:${data.phone}`}
-            className="text-blue-600 hover:underline"
+            className=" text-blue-600 hover:underline"
           >
             {data.phone}
           </a>

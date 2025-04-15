@@ -36,14 +36,20 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <section className="mb-12">
-      <h2 className="text-2xl font-bold mb-4">보유 역량 요약</h2>
+    <section className="mb-6 sm:mb-12">
+      <h2 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">
+        보유 역량 요약
+      </h2>
       {data.skills.map((skill, index) => (
         <div key={index} className="mb-4">
-          <h3 className="text-xl font-semibold mb-2">{skill.category}</h3>
+          <h3 className="text-base sm:text-xl font-semibold mb-2">
+            {skill.category}
+          </h3>
           <ul className="list-disc pl-6">
             {skill.items.map((item, idx) => (
-              <li key={idx}>{item}</li>
+              <li className="text-sm sm:text-base" key={idx}>
+                {item}
+              </li>
             ))}
           </ul>
         </div>

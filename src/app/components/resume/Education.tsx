@@ -22,24 +22,26 @@ export const Education: React.FC = () => {
   };
 
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-4">Education</h2>
-      <div className="h-px bg-gray-300 my-4"></div>
+    <section className="mb-4 sm:mb-8">
+      <h2 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Education</h2>
+      <div className="h-px bg-gray-300 my-2 sm:my-4"></div>
       {data.education.map((edu, index) => (
-        <div key={index} className="mb-4">
-          <h3 className="text-xl font-semibold ">
+        <div key={index} className="mb-2 sm:mb-4">
+          <h3 className="text-base sm:text-xl font-semibold ">
             {edu.school} / {edu.degree} ({edu.period})
           </h3>
           {edu.details && (
             <ul className="list-disc pl-6 mt-2">
               {edu.details.map((detail, idx) => (
-                <li key={idx} className="mb-1">
+                <li key={idx} className="text-sm sm:text-lg mb-1">
                   {detail}
                 </li>
               ))}
             </ul>
           )}
-          {edu.gpa && <p className="mt-1">- GPA: {edu.gpa}</p>}
+          {edu.gpa && (
+            <p className="text-sm sm:text-lg mt-1">- GPA: {edu.gpa}</p>
+          )}
         </div>
       ))}
     </section>
