@@ -1,7 +1,7 @@
 import * as React from "react";
 const TistoryImage = (props: React.ComponentProps<"svg">) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459 459" {...props}>
-    <title>{"\uD2F0\uC2A4\uD1A0\uB9AC \uB85C\uACE0"}</title>
+    <title>티스토리 이미지</title>
     <path
       id="logo"
       fill={props.fill || "#eb531f"}

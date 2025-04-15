@@ -37,7 +37,6 @@ export default function Home() {
           <p className="font-semibold text-black z-1">준비중입니다</p>
         </div>
       )}
-      <FloatingActionButtonComponent />
       <CanvasArea />
     </div>
   );
