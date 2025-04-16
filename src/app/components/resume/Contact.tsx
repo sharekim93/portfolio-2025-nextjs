@@ -12,7 +12,7 @@ export const Contact: React.FC = () => {
   return (
     <section className="mb-4 sm:mb-8">
       <h2 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Contacts</h2>
-      <p className="flex flex-wrap text-sm sm:text-base">
+      <p className="flex flex-wrap text-sm sm:text-base gap-1">
         {isMobile ? (
           <a
             href={`tel:${data.phone}`}
@@ -22,15 +22,15 @@ export const Contact: React.FC = () => {
           </a>
         ) : (
           data.phone
-        )}{" "}
-        ·{" "}
+        )}
+        <span>·</span>
         <a
           href={`mailto:${data.email}`}
           className="text-blue-600 hover:underline"
         >
           {data.email}
-        </a>{" "}
-        ·{" "}
+        </a>
+        <span>·</span>
         <a href={data.blog} className="text-blue-600 hover:underline">
           {data.blog}
         </a>
