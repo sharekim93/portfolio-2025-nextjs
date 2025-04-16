@@ -15,7 +15,7 @@ export default function Home() {
     <div className="w-full h-full ">
       <GnbMenu />
       <div className="mt-10">{tabIndex === 0 ? <Introduce /> : <Resume />}</div>
-      <CanvasArea />
+      {tabIndex === 0 ? <CanvasArea /> : undefined}
     </div>
   );
 }
