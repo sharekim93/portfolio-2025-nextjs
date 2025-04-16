@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Header } from "./Header";
 import { Contact } from "./Contact";
 import { Position } from "./Position";
@@ -9,9 +9,13 @@ import { Education } from "./Education";
 import { Etc } from "./Etc";
 
 const Resume: React.FC = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
   return (
-    <div className="bg-white text-gray-800 max-w-5xl mx-auto p-8 shadow-lg">
-      <Header />
+    <div
+      ref={contentRef}
+      className="bg-white text-gray-800 max-w-5xl mx-auto p-8 shadow-lg"
+    >
+      <Header ref={contentRef} />
       <Contact />
       <Position />
       <Skills />

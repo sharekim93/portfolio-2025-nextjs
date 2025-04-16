@@ -1,12 +1,10 @@
 import React from "react";
 import TistoryImage from "../atoms/TistoryImage";
-import { BlogURL, GithubURL } from "@/constants";
+import { BACKGROUND_COLOR, BlogURL, GithubURL } from "@/constants";
 import GithubImage from "../atoms/GithubImage";
 import { Mail } from "lucide-react";
 
 const MenuActions = () => {
-  const BACKGROUND_COLOR = "#71717a";
-
   const onMouseEnter: React.MouseEventHandler<SVGElement> = (e) => {
     const logo = e.currentTarget.querySelector("#logo");
     logo?.setAttribute("fill", "black");

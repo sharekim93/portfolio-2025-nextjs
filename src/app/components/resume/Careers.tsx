@@ -61,7 +61,7 @@ export const Careers: React.FC = () => {
   };
 
   return (
-    <section className="mb-4 sm:mb-8">
+    <section className="mb-4 sm:mb-8 print:break-before-page print:pt-10">
       <h2 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4">Careers</h2>
       <div className="h-px bg-gray-300 my-2 sm:my-4"></div>
       {data.careers.map((career, index) => (
