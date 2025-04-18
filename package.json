@@ -12,7 +12,7 @@
     "@radix-ui/react-hover-card": "^1.1.6",
     "@radix-ui/react-slot": "^1.1.2",
     "class-variance-authority": "^0.7.1",
-    "html2canvas": "^1.4.1",
+    "html2canvas-pro": "^1.5.8",
     "jspdf": "^3.0.1",
     "ky": "^1.8.0",
     "lucide-react": "^0.486.0",
