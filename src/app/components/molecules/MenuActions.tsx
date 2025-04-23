@@ -2,7 +2,7 @@ import React from "react";
 import TistoryImage from "../atoms/TistoryImage";
 import { BACKGROUND_COLOR, BlogURL, GithubURL } from "@/constants";
 import GithubImage from "../atoms/GithubImage";
-import { Mail } from "lucide-react";
+import { LuMail as Mail } from "react-icons/lu";
 
 const MenuActions = () => {
   const onMouseEnter: React.MouseEventHandler<SVGElement> = (e) => {

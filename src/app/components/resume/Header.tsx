@@ -1,6 +1,6 @@
 import { BACKGROUND_COLOR } from "@/constants";
 import usePdf from "@/hooks/usePdf";
-import { Download, Printer } from "lucide-react";
+import { LuDownload as Download, LuPrinter as Printer } from "react-icons/lu";
 import React from "react";
 import { useReactToPrint } from "react-to-print";
 
