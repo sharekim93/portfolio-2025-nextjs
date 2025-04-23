@@ -33,14 +33,14 @@ export const Education: React.FC = () => {
           {edu.details && (
             <ul className="list-disc pl-6 mt-2">
               {edu.details.map((detail, idx) => (
-                <li key={idx} className="text-sm sm:text-lg mb-1">
+                <li key={idx} className="text-sm sm:text-base mb-1">
                   {detail}
                 </li>
               ))}
             </ul>
           )}
           {edu.gpa && (
-            <p className="text-sm sm:text-lg mt-1">- GPA: {edu.gpa}</p>
+            <p className="text-sm sm:text-base mt-1">- GPA: {edu.gpa}</p>
           )}
         </div>
       ))}
