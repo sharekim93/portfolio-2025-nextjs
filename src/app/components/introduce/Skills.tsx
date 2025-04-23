@@ -38,12 +38,13 @@ export default function Skills() {
           <CardContent className="flex flex-wrap gap-2">
             <Badge
               variant="outline"
-              className="flex justify-center items-center p-2 w-20"
+              className="flex justify-start items-center p-2 w-20"
               title="HTML"
             >
               <Popover>
-                <PopoverTrigger className="flex justify-center items-center">
-                  <RiHtml5Fill size={30} color="#E44D26" /> HTML
+                <PopoverTrigger className="flex justify-start items-center">
+                  <RiHtml5Fill size={30} color="#E44D26" />
+                  <span>HTML</span>
                 </PopoverTrigger>
                 <PopoverContent>
                   마크업 언어를 활용해 웹 페이지를 구조화 할 수 있습니다. 시멘틱
@@ -53,12 +54,13 @@ export default function Skills() {
             </Badge>
             <Badge
               variant="outline"
-              className="flex justify-center items-center p-2 w-20"
+              className="flex justify-start items-center p-2 w-20"
               title="CSS"
             >
               <Popover>
-                <PopoverTrigger className="flex justify-center items-center">
-                  <RiCss3Fill size={30} color="#264de4" /> CSS
+                <PopoverTrigger className="flex justify-start items-center">
+                  <RiCss3Fill size={30} color="#264de4" />
+                  <span>CSS</span>
                 </PopoverTrigger>
                 <PopoverContent>
                   CSS 선택자를 활용한 스타일링에 능숙합니다. @규칙(At rules)를
