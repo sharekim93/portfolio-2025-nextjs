@@ -26,7 +26,7 @@ export default function Skills() {
       variants={fadeIn}
       className=" w-full h-full min-h-screen flex flex-col justify-start items-start mt-10"
     >
-      <h2 className="text-3xl font-bold mb-4 text-foreground ">Skills</h2>
+      <h2 className="text-3xl font-bold mb-4 text-foreground ">Skills(WIP)</h2>
       <p className="pb-4 text-gray-600 font-light text-sm sm:text-base">
         버튼을 {isMobile ? "터치" : "클릭"}해보세요
       </p>
