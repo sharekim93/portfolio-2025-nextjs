@@ -1,4 +1,4 @@
-import { BlogURL } from "@/constants";
+import { BLOG_URL } from "@/constants";
 import React from "react";
 import { isMobile } from "react-device-detect";
 
@@ -6,7 +6,7 @@ export const Contact: React.FC = () => {
   const data = {
     phone: "010-9887-6284",
     email: "sksyag@naver.com",
-    blog: BlogURL,
+    blog: BLOG_URL,
   };
 
   return (

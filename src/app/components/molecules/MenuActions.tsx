@@ -1,6 +1,6 @@
 import React from "react";
 import TistoryImage from "../atoms/TistoryImage";
-import { BACKGROUND_COLOR, BlogURL, GithubURL } from "@/constants";
+import { RESUME_BACKGROUND_COLOR, BLOG_URL, GITHUB_URL } from "@/constants";
 import GithubImage from "../atoms/GithubImage";
 import { LuMail as Mail } from "react-icons/lu";
 
@@ -12,7 +12,7 @@ const MenuActions = () => {
 
   const onMouseLeave: React.MouseEventHandler<SVGElement> = (e) => {
     const logo = e.currentTarget.querySelector("#logo");
-    logo?.setAttribute("fill", BACKGROUND_COLOR);
+    logo?.setAttribute("fill", RESUME_BACKGROUND_COLOR);
   };
 
   return (
@@ -20,26 +20,26 @@ const MenuActions = () => {
       <div className="h-10 flex pt-4 gap-4">
         <GithubImage
           className="w-6 h-6"
-          fill={BACKGROUND_COLOR}
+          fill={RESUME_BACKGROUND_COLOR}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           onClick={() =>
-            window.open(GithubURL, "_blank", "noopener,noreferrer")
+            window.open(GITHUB_URL, "_blank", "noopener,noreferrer")
           }
         />
         <TistoryImage
           className="w-6 h-6"
-          fill={BACKGROUND_COLOR}
+          fill={RESUME_BACKGROUND_COLOR}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          onClick={() => window.open(BlogURL, "_blank", "noopener,noreferrer")}
+          onClick={() => window.open(BLOG_URL, "_blank", "noopener,noreferrer")}
         />
         <Mail
           className="h-6 w-6 text-gray-400"
-          stroke={BACKGROUND_COLOR}
+          stroke={RESUME_BACKGROUND_COLOR}
           onMouseEnter={(e) => (e.currentTarget.style.stroke = "black")}
           onMouseLeave={(e) =>
-            (e.currentTarget.style.stroke = BACKGROUND_COLOR)
+            (e.currentTarget.style.stroke = RESUME_BACKGROUND_COLOR)
           }
           onClick={() => (location.href = "mailto:sksyag@naver.com")}
         />

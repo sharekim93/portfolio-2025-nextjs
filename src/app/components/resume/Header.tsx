@@ -1,4 +1,4 @@
-import { BACKGROUND_COLOR } from "@/constants";
+import { RESUME_BACKGROUND_COLOR } from "@/constants";
 import usePdf from "@/hooks/usePdf";
 import { LuDownload as Download, LuPrinter as Printer } from "react-icons/lu";
 import React from "react";
@@ -29,12 +29,12 @@ export const Header = ({ ref }: { ref?: React.Ref<HTMLDivElement> }) => {
         <div className="flex gap-4 not-pdf print:hidden">
           <Download
             className="print:hidden"
-            stroke={BACKGROUND_COLOR}
+            stroke={RESUME_BACKGROUND_COLOR}
             onClick={() => handleDownloadPdf()}
           />
           <Printer
             className="print:hidden"
-            stroke={BACKGROUND_COLOR}
+            stroke={RESUME_BACKGROUND_COLOR}
             onClick={() => printBtnFn()}
           />
         </div>

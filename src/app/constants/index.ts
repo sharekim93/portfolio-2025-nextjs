@@ -1,3 +1,3 @@
-export const BlogURL = "https://sharekim-dev.tistory.com";
-export const GithubURL = "https://github.com/sharekim93";
-export const BACKGROUND_COLOR = "#71717a";
+export const BLOG_URL = "https://sharekim-dev.tistory.com";
+export const GITHUB_URL = "https://github.com/sharekim93";
+export const RESUME_BACKGROUND_COLOR = "#71717a";
