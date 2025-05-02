@@ -16,7 +16,7 @@ const GnbMenu = () => {
 
   return (
     <div
-      className={`flex items-center justify-start pl-3 pb-3 fixed top-0 left-0 right-0 z-1 bg-[#FAF9F6] border-b-[0.5px] ${
+      className={`flex items-center justify-start pl-3 pb-3 fixed top-0 left-0 right-0 z-1 bg-background border-b-[0.5px] ${
         activeTabIndex === 1 && "bg-white"
       }`}
     >
@@ -50,7 +50,7 @@ const GnbMenu = () => {
           hover:bg-transparent
           hover:text-foreground
 
-          data-[state=active]:border-b-primary
+          data-[state=active]:border-b-gray-600
           data-[state=active]:text-foreground 
           data-[state=active]:shadow-none
           "
