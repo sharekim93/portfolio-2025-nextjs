@@ -15,7 +15,7 @@ export default function Intro() {
         initial="hidden"
         animate={animation}
         variants={fadeIn}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.5 }}
         className="container w-full h-full min-h-screen flex flex-col justify-start mt-10 pt-20 items-start"
       >
         <h1 className="text-xl sm:text-2xl font-bold text-gray-800 min-w-xs">
@@ -42,7 +42,7 @@ export default function Intro() {
             className="flex flex-col flex-wrap gap-y-4"
           >
             <div className="flex gap-x-2">
-              <h2 className="font-semibold text-lg md:text-xl text-pink-500">
+              <h2 className="font-semibold text-lg md:text-xl text-primary">
                 프론트엔드 개발자
               </h2>
               <span className="text-lg text-gray-400">입니다</span>
@@ -71,7 +71,7 @@ export default function Intro() {
             className="flex flex-col flex-wrap gap-y-4"
           >
             <div className="flex gap-x-2">
-              <h2 className="font-semibold text-lg md:text-xl text-pink-500">
+              <h2 className="font-semibold text-lg md:text-xl text-primary">
                 백엔드 개발자
               </h2>
               <span className="text-lg text-gray-400">입니다</span>
