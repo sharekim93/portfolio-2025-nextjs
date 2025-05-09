@@ -1,6 +1,6 @@
 "use client";
 import { useMenuStore } from "@/store/menuStore";
-import GnbMenu from "@/components/molecules/Gnb";
+import GnbMenu from "@/components/ui/molecules/Gnb";
 import Resume from "@/components/resume";
 import Introduce from "@/components/introduce";
 
