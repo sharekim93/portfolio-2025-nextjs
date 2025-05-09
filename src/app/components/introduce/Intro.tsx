@@ -18,13 +18,20 @@ export default function Intro() {
         transition={{ duration: 0.5 }}
         className="container w-full h-full min-h-screen flex flex-col justify-start mt-10 pt-20 items-start"
       >
-        <h1 className="text-xl sm:text-2xl font-bold text-gray-800 min-w-xs">
-          안녕하세요, 김나눔입니다
-        </h1>
+        <div className="flex flex-col gap-y-4">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 min-w-xs">
+            안녕하세요, <br />웹 개발자 김나눔입니다.
+          </h1>
+          <p className="text-sm sm:text-xs text-gray-600 font-light">
+            React 를 기반으로 주로 프론트엔드를 개발합니다
+            <br />
+            함께 제품을 만들고 성장할 곳을 찾고 있습니다.
+          </p>
+        </div>
         <div className="flex flex-col gap-8">
           <motion.div
             variants={fadeIn}
-            className="flex flex-wrap  gap-x-4 my-8 text-md sm:text-lg min-w-xs mt-10"
+            className="flex flex-wrap  gap-x-4 my-8 text-md sm:text-lg min-w-xs "
             transition={{ duration: 1 }}
           >
             <span className="min-w-1/24">#프론트엔드</span>

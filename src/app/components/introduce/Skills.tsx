@@ -46,7 +46,7 @@ export default function Skills() {
     >
       <h2 className="text-3xl font-bold mb-4 text-foreground ">Skills</h2>
       <div className="w-full flex flex-wrap pb-10">
-        <Accordion className="w-full" type="multiple">
+        <Accordion className="w-full" type="multiple" defaultValue={["core"]}>
           <AccordionItem value="core">
             <AccordionTrigger className="w-full flex items-center align-middle pt-4">
               <h3 className="text-primary text-xl font-semibold w-full">
