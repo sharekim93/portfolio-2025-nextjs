@@ -22,10 +22,9 @@ export default function Intro() {
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 min-w-xs">
             안녕하세요, <br />웹 개발자 김나눔입니다.
           </h1>
-          <p className="text-sm sm:text-xs text-gray-600 font-light">
-            React 를 기반으로 주로 프론트엔드를 개발합니다
-            <br />
-            함께 제품을 만들고 성장할 곳을 찾고 있습니다.
+          <p className="text-sm sm:text-base text-gray-600 font-light flex flex-col min-w-xs mt-4">
+            <span>React 를 기반으로 주로 프론트엔드를 개발합니다</span>
+            <span>함께 제품을 만들고 성장할 곳을 찾고 있습니다.</span>
           </p>
         </div>
         <div className="flex flex-col gap-8">
