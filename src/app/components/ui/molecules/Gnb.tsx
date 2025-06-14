@@ -6,7 +6,7 @@ import { useMenuStore } from "@/store/menuStore";
 import MenuActions from "./MenuActions";
 
 const GnbMenu = () => {
-  const MENU = ["Introduce", "Resume"];
+  const MENU = ["소개", "이력서"];
 
   const { tabIndex: activeTabIndex } = useMenuStore();
   const setTabIndex = useMenuStore((state) => state.setTabIndex);
