@@ -10,9 +10,6 @@ const notoSans = Noto_Sans_KR({
 export const metadata: Metadata = {
   title: "Frontend Share Kim",
   description: "Frontend Share Kim's Portfolio",
-  other:{
-    "naver-site-verification":"133ad8efff8ec3c9c3439010d5c56ba40105d823"
-  }
 };
 
 export default function RootLayout({
